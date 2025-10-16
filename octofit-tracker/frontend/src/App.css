@@ -1,0 +1,120 @@
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #e0f7fa 0%, #f8bbd0 100%);
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 60px;
+  pointer-events: none;
+  margin-right: 16px;
+}
+
+.App-header {
+  background: linear-gradient(90deg, #4F8A8B 0%, #FBD46D 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+.App-link {
+  color: #4F8A8B;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Bootstrap overrides */
+.navbar {
+  background: linear-gradient(90deg, #4F8A8B 0%, #FBD46D 100%) !important;
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+}
+.navbar-brand img {
+  vertical-align: middle;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+  color: #FBD46D !important;
+}
+
+h2, .card-title {
+  color: #4F8A8B !important;
+  font-weight: 700;
+}
+
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.table thead {
+  background: #4F8A8B;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e0f7fa;
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #f8bbd0;
+}
+
+.btn, .btn-primary {
+  background: #4F8A8B;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 8px 24px;
+  margin: 4px;
+  transition: background 0.2s;
+}
+.btn:hover, .btn-primary:hover {
+  background: #FBD46D;
+  color: #4F8A8B;
+}
+
+.card {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 2px 16px rgba(79,138,139,0.08);
+}
+.card-title {
+  color: #4F8A8B;
+}
+.card-body {
+  background: #fff;
+  border-radius: 16px;
+}
+
+/* Modal styles */
+.modal-content {
+  border-radius: 16px;
+}
+.modal-header {
+  background: #4F8A8B;
+  color: #fff;
+}
+.modal-footer {
+  background: #f8bbd0;
+}
